@@ -5,6 +5,8 @@ import helmet from 'helmet';
 import compression from 'compression';
 import morgan from 'morgan';
 import userRoutes from './routes/UserRoutes.js'
+import bankrollRoutes from './routes/BankrollRoutes.js'
+import tournamentRoutes from './routes/TournamentRoutes.js'
 import cookieParser from 'cookie-parser';
 
 dotenv.config();
@@ -29,6 +31,8 @@ app.use(express.urlencoded({extended: true}));
 
 // rotas
 app.use('/api/users', userRoutes)
+app.use('/api/bankroll', bankrollRoutes)
+app.use('/api/tournaments', tournamentRoutes)
 
 app.get('/health', (req, res) => {
   res.json({ 
