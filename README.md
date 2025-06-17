@@ -1,4 +1,4 @@
-# Poker Bankroll Management 🎰
+# Poker Bankroll Management 
 
 Sistema completo de gerenciamento de banca e análise de performance para jogadores de poker, desenvolvido com a stack MERN (MongoDB, Express.js, React, Node.js).
 
